@@ -55,11 +55,11 @@ public class ProxyResource {
   
   private DiscoveryClient discoveryClient = new DiscoveryClient();
   
-  private String password = System.getenv("6KckIYygsetl");
+  private String password = "6KckIYygsetl";
   
   private String url;
   
-  private String username = System.getenv("a1774e1a-af7b-41f8-8c82-cf6b4da9223e");
+  private String username = "a1774e1a-af7b-41f8-8c82-cf6b4da9223e";
 
   private MessageRequest buildMessageFromPayload(InputStream body) {
     StringBuilder sbuilder = null;
