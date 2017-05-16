@@ -43,10 +43,10 @@ public class DiscoveryQuery {
    * Instantiates a new discovery query.
    */
   public DiscoveryQuery() {
-    userName = System.getenv("14de0531-d268-40e3-a755-9b31e2d5309e");
-    password = System.getenv("VopkW7caWE5h");
-    collectionId = System.getenv("50dc885a-80f9-4f31-9997-79fe04b5acb5");
-    environmentId = System.getenv("bbcdd1c5-01d8-40ec-9a42-3bb643f86ce2");
+    userName = System.getenv("DISCOVERY_USERNAME");
+    password = System.getenv("DISCOVERY_PASSWORD");
+    collectionId = System.getenv("DISCOVERY_COLLECTION_ID");
+    environmentId = System.getenv("DISCOVERY_ENVIRONMENT_ID");
     queryFields = System.getenv("DISCOVERY_QUERY_FIELDS");
 
     discovery = new Discovery(Constants.DISCOVERY_VERSION);
