@@ -77,6 +77,6 @@ public class Constants {
   public static final String SETUP_STEP = "setup_step";
 
   /** The Constant WORKSPACE_ID. */
-  public static final String WORKSPACE_ID = "WORKSPACE_ID";
+  public static final String WORKSPACE_ID = "fc677ae7-5940-477c-9552-c49a5c91fc6b";
 
 }
