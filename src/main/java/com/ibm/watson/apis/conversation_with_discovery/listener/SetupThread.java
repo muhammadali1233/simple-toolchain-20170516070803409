@@ -98,10 +98,10 @@ public class SetupThread extends Thread {
 
       // test discovery credentials
 
-      String userName = "14de0531-d268-40e3-a755-9b31e2d5309e";
-      String password = "VopkW7caWE5h";
-      String collectionId = "50dc885a-80f9-4f31-9997-79fe04b5acb5";
-      String environmentId = "bbcdd1c5-01d8-40ec-9a42-3bb643f86ce2";
+      String userName = System.getenv("14de0531-d268-40e3-a755-9b31e2d5309e");
+      String password = System.getenv("VopkW7caWE5h");
+      String collectionId = System.getenv("50dc885a-80f9-4f31-9997-79fe04b5acb5");
+      String environmentId = System.getenv("bbcdd1c5-01d8-40ec-9a42-3bb643f86ce2");
 
       if ((userName == null) || (password == null) || (collectionId == null) || (environmentId == null)) {
         throw new IllegalArgumentException(Messages.getString("SetupThread.DISC_INVALID_CREDS"));
@@ -126,9 +126,9 @@ public class SetupThread extends Thread {
       updateConfigObject("2", Constants.NOT_READY, Messages.getString("SetupThread.EMPTY"),
           Messages.getString("SetupThread.GETTING_CREDENTIALS"));
 
-      userName = "a1774e1a-af7b-41f8-8c82-cf6b4da9223e";
-      password = "6KckIYygsetl";
-      String workspaceId = "fc677ae7-5940-477c-9552-c49a5c91fc6b";
+      userName = System.getenv("a1774e1a-af7b-41f8-8c82-cf6b4da9223e");
+      password = System.getenv("6KckIYygsetl");
+      String workspaceId = System.getenv("fc677ae7-5940-477c-9552-c49a5c91fc6b");
 
       if ((userName == null) || (password == null) || (workspaceId == null)) {
         throw new IllegalArgumentException(Messages.getString("SetupThread.CONV_INVALID_CREDS"));
